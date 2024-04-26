@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: block;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 1440px;
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 8% auto 3% auto;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    z-index: -1;
+    width: 520px;
+    height: 650px;
+    position: absolute;
+    border-radius: 0 0 50% 50%;
+    top: 0;
+    left: -9%;
+    background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    -ms-border-radius: 0 0 50% 50%;
+    -o-border-radius: 0 0 50% 50%;
+}
+.right{
+    z-index: -1;
+    width: 500px;
+    height: 580px;
+    position: absolute;
+    border-radius:50% 0 0 0;
+    top: 20%;
+    left: 85%;
+    background-color: #fcf1ff;
+    -webkit-border-radius:50% 0 0 0;
+    -moz-border-radius:50% 0 0 0;
+    -ms-border-radius:50% 0 0 0;
+    -o-border-radius:50% 0 0 0;
+}
+/*phone design*/
+.phone{
+    box-shadow: 0px 10px 20px 2px rgb(228, 227, 227);
+    padding: 10px;
+    width: 240px;
+    height: 470px;
+    top: 130px;
+    left: 333px;
+    background-color: white;
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+}
+.screen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    overflow: hidden;
+}
+.camera{
+    z-index: 99;
+    width: 130px;
+    height: 16px;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+    
+}
+.profile{
+    padding-top: 25px;
+    background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+}
+.profile i{
+    font-size: 0.7em;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.profile img{
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.name{
+    margin-top: 9px;
+    padding:0 7px;
+}
+.profile p{
+    color: white;
+    font-size: 0.8em;
+    line-height: 2px;
+}
+.profile span{
+    color: hsl(289, 96%, 80%);
+    font-size: 0.5em;
+    line-height: 2px;
+}
+.icon{
+    position: absolute;
+    right:10px;   
+}
+.coming{
+    position: absolute;
+    top: 75px;
+    left: 8px;
+    font-size: 0.55em;
+    color: hsl(276, 55%, 52%);
+}
+.coming p{
+    width: 65%;
+    background-color: #f9e9fe;
+    padding: 6px;
+    margin-bottom: 8px;
+    border-radius: 10px 10px 10px 4px;
+    -webkit-border-radius: 10px 10px 10px 4px;
+    -moz-border-radius: 10px 10px 10px 4px;
+    -ms-border-radius: 10px 10px 10px 4px;
+    -o-border-radius: 10px 10px 10px 4px;
+}
+.images{
+    display: flex;
+    position: absolute;
+    top: 155px;
+    right: 0;
+}
+.images img{
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.sending{
+    position: absolute;
+    top: 205px;
+    left: 70px;
+    font-size: 0.55em;
+    color:hsl(271, 15%, 43%);
+}
+.sending p{
+    margin-right: 8px;
+    display: inline;
+    float: right;
+    background-color: #ffffff;
+    padding:6px;
+    margin-bottom: 8px;
+    border-radius: 10px 10px 4px 10px;
+    -webkit-border-radius: 10px 10px 4px 10px;
+    -moz-border-radius: 10px 10px 4px 10px;
+    -ms-border-radius: 10px 10px 4px 10px;
+    -o-border-radius: 10px 10px 4px 10px;
+}
+.long{
+    position: absolute;
+    top: 274px;
+    left: 8px;
+    font-size: 0.55em;
+    color: hsl(276, 55%, 52%);
+}
+.long p{
+    width: 65%;
+    background-color: #f9e9fe;
+    padding: 6px;
+    margin-bottom: 8px;
+    border-radius: 10px 10px 10px 4px;
+    -webkit-border-radius: 10px 10px 10px 4px;
+    -moz-border-radius: 10px 10px 10px 4px;
+    -ms-border-radius: 10px 10px 10px 4px;
+    -o-border-radius: 10px 10px 10px 4px;
+}
+.check1{
+    width: 150px;
+    padding:4px 6px;
+    top: 326px;
+    left: 8px;
+    position: absolute;
+    background: linear-gradient(to left, hsl(264, 100%, 61%) , hsl(293, 100%, 63%));
+    border-radius: 10px 10px 10px 4px;
+    -webkit-border-radius: 10px 10px 10px 4px;
+    -moz-border-radius: 10px 10px 10px 4px;
+    -ms-border-radius: 10px 10px 10px 4px;
+    -o-border-radius: 10px 10px 10px 4px;
+}
+.check1 i,
+.check1 span{
+    color: hsl(289, 96%, 80%);
+    font-size: 0.6em;
+}
+.check1 b{
+    margin-left: 20px;
+    color: white;
+    font-size: 0.8em;
+}
+.check2{
+    width: 150px;
+    padding:4px 6px;
+    top: 362px;
+    left: 8px;
+    position: absolute;
+    background: linear-gradient(to left, hsl(264, 100%, 61%) , hsl(293, 100%, 63%));
+    border-radius: 10px 10px 10px 4px;
+    -webkit-border-radius: 10px 10px 10px 4px;
+    -moz-border-radius: 10px 10px 10px 4px;
+    -ms-border-radius: 10px 10px 10px 4px;
+    -o-border-radius: 10px 10px 10px 4px;
+}
+.check2 i,
+.check2 span{
+    color: hsl(289, 96%, 80%);
+    font-size: 0.6em;
+}
+.check2 b{
+    margin-left: 40px;
+    color: white;
+    font-size: 0.8em;
+}
+.input{
+    color: hsl(206, 6%, 79%);
+    width: 92%;
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    font-size: 0.7em;
+    padding: 11px;
+    background-color: white;
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+}
+.input span{
+    margin-left: 10px;
+}
+.send{
+    position: absolute;
+    bottom: 16px;
+    right: 14px;
+    font-size: 1.5em;
+    color: hsl(271, 36%, 24%);
+}
+.text{
+    padding: 20px;
+    margin-top: 5%;
+    width: 465px;
+}
+.text h3{
+    font-size: 2.5em;
+}
+.text p{
+    margin-top: 20px;
+    color: #84808a;
+    line-height: 28px;
+    font-size: 1.2em;
+}
+@media screen and (max-width: 992px) {
+    body{
+        max-width: 1024px;
+    }
+    section{
+        gap: 0px;
+        margin: 5% 15%;
+    }
+    .left{
+        left: -20%;
+        height: 600px;
+    }
+    .right{
+        width: 45%;
+        height: 60%;
+        top: 40vh;
+        left: 55%;
+        border-radius: 95% 0 0 0;
+        -webkit-border-radius: 95% 0 0 0;
+        -moz-border-radius: 95% 0 0 0;
+        -ms-border-radius: 95% 0 0 0;
+        -o-border-radius: 95% 0 0 0;
+}
+    .phone{
+        top: 100px;
+        left: 35%;
+    } 
+    .text{
+        padding: 0px;
+        margin-top: 20%;
+        text-align: center;
+        width: 425px;
+    } 
+}
+@media screen and (max-width: 500px) {
+    body{
+        max-width: 500px;
+    }
+    section{
+        gap: 0px;
+        margin: 5% auto;
+    }
+    .left{
+        left: -50%;
+        width: 380px;
+        height: 600px;
+    }
+    .right{
+        width: 45%;
+        height: 60%;
+        top: 40vh;
+        left: 55%;
+        border-radius: 95% 0 0 0;
+        -webkit-border-radius: 95% 0 0 0;
+        -moz-border-radius: 95% 0 0 0;
+        -ms-border-radius: 95% 0 0 0;
+        -o-border-radius: 95% 0 0 0;
+}
+    .phone{
+        top: 80px;
+        left: 22%;
+    }  
+    .text{
+        padding: 0px;
+        margin-top: 20%;
+        text-align: center;
+        max-width: 350px;
+    } 
+}
